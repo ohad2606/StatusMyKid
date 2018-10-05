@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="7dp">
+        <TextView
+           android:id="@+id/lbl_main_frame"
+           android:layout_width="0dp"
+            android:layout_weight="1"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:text=""
+            android:textStyle="bold"
+           android:textSize="20dp" />
+        <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:text="ראשי"
+           android:background="@drawable/rounded_shape"
+           android:onClick="btn_main"/>
+    </LinearLayout>
+    <include layout="@layout/lyt_add_kid"
+        android:visibility="gone"
+        android:id="@+id/inc_add_kid"/>
+    <include layout="@layout/lyt_send_message"
+        android:visibility="gone"
+        android:id="@+id/inc_send_message"/>
+    <include layout="@layout/lyt_users"
+        android:visibility="gone"
+        android:id="@+id/inc_users"/>
+    <include layout="@layout/lyt_presence"
+        android:visibility="gone"
+        android:id="@+id/inc_presence"/>
+</LinearLayout>

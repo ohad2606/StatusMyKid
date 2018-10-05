@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="user name and date"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/lbl_user_date"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="דיווח נוכחות"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_shape"
+            android:onClick="btnCheck"/>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="בדיקת נוכחות"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:paddingRight="5dp"
+            android:background="@drawable/rounded_shape"
+            android:onClick="btnPresenceScreen"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="הוסף ילד"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_shape"
+            android:onClick="btnAddNewKid"/>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="עריכת פרטי ילד"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_shape"
+            android:id="@+id/btn_kid_edit"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="שליחת הודעה"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_shape"
+            android:onClick="btnSendMessageScreen"/>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ניהול הגדרות ומשתמשים"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_shape"
+            android:onClick="btnSettings"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginBottom="15dp"
+        android:text="התנתקות"
+        android:background="@drawable/rounded_shape"
+        android:onClick="btnLogoff"/>
+</LinearLayout>

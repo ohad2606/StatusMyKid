@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "188924980955",
+    "firebase_url": "https://statusmykid.firebaseio.com",
+    "project_id": "statusmykid",
+    "storage_bucket": "statusmykid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188924980955:android:afc959d6269f7cd5",
+        "android_client_info": {
+          "package_name": "com.ohad.statusmykid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188924980955-a55sje52ce7fvnjf2cf72r992o59qo99.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ohad.statusmykid",
+            "certificate_hash": "ae3df21f0c244442b332f61210b6da4cc6ff2925"
+          }
+        },
+        {
+          "client_id": "188924980955-q7tkmp03e2inl10usprt2fvvm625fjb4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1EA8yohB4iqmIAFMIFLzzYRuxdiWqU4E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188924980955-q7tkmp03e2inl10usprt2fvvm625fjb4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
